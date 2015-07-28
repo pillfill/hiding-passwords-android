@@ -1,8 +1,8 @@
 # Hiding Passwords
 
-This is a simple demonstration app for Android to illustrate some of the ways that developers try to hide keys, passwords, or other sensitive information within an app. This project doesn't aim to show how this SHOULD be done- rather, we want to how show the various techniques work as well as some of the more significant limitations.
+This is a simple demonstration app to illustrate some of the methods used hide keys, passwords, or other sensitive information within an APK. This project doesn't aim to show how this SHOULD be done- rather, we want to how show the various techniques work as well as some of the more significant limitations.
 
-There is no foolproof way to prevent a user from accessing sensitive information embedded within any mobile app. This is especially true with Android apps. Hiding and obfuscation techniques only make the task harder. The only surefire way to keep a key from becoming compromised is to not expose it. The best solution is to keep sensitive information on a server you own and never put it into the app in the first place.
+There is simply **no** foolproof way to prohibit someone with a app binary from accessing sensitive information embedded within it. This is especially true with Android apps. Hiding and obfuscation techniques can only make the task reverse engineering task harder. The only surefire way to keep information safe from compromised is to not expose it- keep passwords, keys, etc. on a server you own and never put it into the app in the first place.
 
 ## Goal
 

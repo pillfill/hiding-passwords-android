@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HidingPasswords</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="server_password">My_S3cr3t_P@$$W0rD</string>
+    <string name="twitter_secret">FAKEPTgnpptRRRRhyxVDfQsbCHWrr84LMoNtyFHlccc</string>
+    <string name="twitter_consumer">FAKE84mKI99cEVUGtUeeRR</string>
+</resources>

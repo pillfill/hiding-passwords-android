@@ -1,0 +1,10 @@
+com.apothesource.hidingpasswords.HidingUtil -> com.apothesource.hidingpasswords.a:
+    java.lang.String hide(java.lang.String) -> a
+    java.lang.String unhide(java.lang.String) -> b
+    void doHiding(byte[],byte[],boolean) -> a
+com.apothesource.hidingpasswords.MainActivity -> com.apothesource.hidingpasswords.MainActivity:
+    byte[] mySlightlyCleverHidingKey -> a
+    java.lang.String[] myCompositeKey -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected

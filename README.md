@@ -1,8 +1,10 @@
 # Hiding Passwords
 
+See the blog post explaining this project here: http://rammic.github.io/2015/07/28/hiding-passwords-in-android-apps/
+
 This is a simple demonstration app to illustrate some of the methods used hide keys, passwords, or other sensitive information within an APK. This project doesn't aim to show how this SHOULD be done- rather, we want to how show the various techniques work as well as some of the more significant limitations.
 
-There is simply **no** foolproof way to prohibit someone with a app binary from accessing sensitive information embedded within it. This is especially true with Android apps. Hiding and obfuscation techniques can only make the task reverse engineering task harder. The only surefire way to keep information safe from compromised is to not expose it- keep passwords, keys, etc. on a server you own and never put it into the app in the first place.
+There is simply **no** foolproof way to prohibit someone with an app's binaries from accessing sensitive information embedded within it. This is especially true with Android apps. Hiding and obfuscation techniques can only make the task reverse engineering task harder. The only surefire way to keep information safe from compromised is to not expose it- keep passwords, keys, etc. on a server you own and never put it into the app in the first place.
 
 ## Goal
 
@@ -10,12 +12,12 @@ This project does not aim to address content DRM, encryption, encoding, etc. dir
 
 ## Contributing
 
-If you have a novel key management/protection scheme that isn't covered here, please feel free to open a pull request to have it included.
+If you have a novel key management/protection scheme that you'd like to see included, please feel free to open a pull request to include it.
 
 
 ## Use
 
-This project is intended to be instructive and, as such, many of the examples will be implemented in an unnecessarily vulnerable or trivially broken manner. You should not depend on code or examples from this project alone if you decide to still embed passwords or other sensitive keys in your app.
+This project is intended to be instructive and, as such, many of the examples will be implemented in an unnecessarily vulnerable or trivially broken manner. You should not depend on code or examples from this project alone if you decide to hide sensitive information within your app.
 
 ## License
 

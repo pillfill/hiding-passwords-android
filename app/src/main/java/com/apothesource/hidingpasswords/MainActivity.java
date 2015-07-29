@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         useStaticHiding(myHiddenMessage);
         useCleverHiding(myHiddenMessage);
         useBuildConfigHiding(myHiddenMessage);
-        useCompositeKey(myHiddenMessage);
+        useXorStringHiding(myHiddenMessage);
         useJniHiding(myHiddenMessage);
     }
 
@@ -111,15 +111,15 @@ public class MainActivity extends AppCompatActivity {
      *
      * @param myHiddenMessage The message we want to hide or unhide
      */
-    public void useCompositeKey(String myHiddenMessage) {
+    public void useXorStringHiding(String myHiddenMessage) {
         byte[] xorParts0 = Base64.decode(myCompositeKey[0],0);
         byte[] xorParts1 = Base64.decode(myCompositeKey[1], 0);
 
-        byte[] compositeKey = new byte[xorParts0.length];
+        byte[] xorKey = new byte[xorParts0.length];
         for(int i = 0; i < xorParts1.length; i++){
-            compositeKey[i] = (byte) (xorParts0[i] ^ xorParts1[i]);
+            xorKey[i] = (byte) (xorParts0[i] ^ xorParts1[i]);
         }
-        HidingUtil.doHiding(myHiddenMessage.getBytes(), compositeKey, false);
+        HidingUtil.doHiding(myHiddenMessage.getBytes(), xorKey, false);
     }
 
     /**

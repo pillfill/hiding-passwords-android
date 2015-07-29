@@ -69,7 +69,7 @@ public class HidingUtil {
 
     /**
      * A convenience method that generates a XOR key pair for a given key. It was used to generate
-     * the key for {@link MainActivity#useCompositeKey(String)} method.
+     * the key for {@link MainActivity#useXorStringHiding(String)} method.
      *
      * @param key The source key to use in generating the XOR key halves
      * @return a two-value string array containing both parts of the XOR key

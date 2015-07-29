@@ -1,6 +1,6 @@
 # Hiding Passwords
 
-See the blog post explaining this project here: http://rammic.github.io/2015/07/28/hiding-passwords-in-android-apps/
+See the blog post explaining this project here: http://rammic.github.io/2015/07/28/hiding-secrets-in-android-apps/
 
 This is a simple demonstration app to illustrate some of the methods used hide keys, passwords, or other sensitive information within an APK. This project doesn't aim to show how this SHOULD be done- rather, we want to how show the various techniques work as well as some of the more significant limitations.
 

@@ -7,3 +7,8 @@
 /captures
 
 .idea
+decompiled/proguard-decompiled/original/META-INF
+decompiled/proguard-decompiled/res
+decompiled/baseline-decompiled/original/META-INF
+decompiled/baseline-decompiled/res
+decompiled/baseline-decompiled/original

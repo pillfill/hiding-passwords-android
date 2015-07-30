@@ -10,6 +10,21 @@ There is simply **no** foolproof way to prohibit someone with an app's binaries 
 
 This project does not aim to address content DRM, encryption, encoding, etc. directly- all of which are relevant once the relevant key material has been successfully embedded and retrieved. Instead, this project will focus on key management techniques specifically.
 
+
+## Build
+
+It's easiest to just build a single platform variant if you want analyze the generated binaries:
+
+`gradle clean assembleX86Debug`
+
+Note that this project depends on the current Android NDK. Android Studio and Gradle builds will notify you of that the current NDK is deprecated:
+
+`Android plugin version 1.2.3 is not compatible with the NDK support. Please use the experimental plugin.` or
+`Current NDK support is deprecated.  Alternative will be provided in the future.`
+
+Builds should still work though despite the warning. See Issue #2 for more information.
+
+
 ## Contributing
 
 If you have a novel key management/protection scheme that you'd like to see included, please feel free to open a pull request to include it.

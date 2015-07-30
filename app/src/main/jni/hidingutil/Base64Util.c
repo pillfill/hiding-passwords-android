@@ -21,7 +21,7 @@ int decodeblock(char *input, char *output, int oplen){
     return rc;
 }
 
-int Base64Decode(char *input, char *output, int oplen){
+int Base64Decode(const char *input, char *output, int oplen){
     char *charval = 0;
     char decoderinput[ENCODERLEN + 1] = "";
     char encodingtabe[TABLELEN + 1] = BASE64CHARSET;
@@ -68,7 +68,7 @@ int encodeblock(char *input, char *output, int oplen){
     return rc;
 }
 
-int Base64Encode(char *input, char *output, int oplen){
+int Base64Encode(const char *input, char *output, int oplen){
     int rc = 0;
     int index = 0, ipindex = 0, iplen = 0;
     char encoderinput[ENCODERBLOCKLEN + 1] = "";

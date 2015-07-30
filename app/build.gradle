@@ -21,6 +21,9 @@ android {
             proguardFiles 'proguard-rules.pro'
             buildConfigField "String", "hiddenPassword", "\"${hiddenPassword}\""
         }
+        release{
+            buildConfigField "String", "hiddenPassword", "\"${hiddenPassword}\""
+        }
     }
 
     productFlavors {
